@@ -1,0 +1,96 @@
+@font-face{
+    font-family: muli;
+    src: url(../fonts/Muli.ttf);
+}
+@font-face{
+    font-family: muliLight;
+    src: url(../fonts/Muli-ExtraLight.ttf);
+}
+@font-face{
+    font-family: catamaran-black;
+    src: url(../fonts/Catamaran-Black.ttf);
+}
+
+:root{
+    --title: #333333;
+    --p: #565656;
+    --second-color: #ff690f;
+}
+/********************** general styles ************************/
+p{color: var(--p); margin: 0; font-family: muliLight;}
+a{text-decoration: none!important;}
+.btn-primary{background: var(--second-color); color: #fff; height: 50px; width: 180px; display: flex; justify-content: center; align-items: center; text-align: center; text-transform: uppercase; font-family: muli; font-weight: 500; letter-spacing: 1px;  border-radius: 5px; font-size: .8em; transition: background .3s;}
+.btn-primary:hover{background: #da5b0d;}
+.flex-center{display: flex; justify-content: center; align-items: center; text-align: center;}
+.flex-center-column{display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+.navbar-toggler-icon i{color: #fff; font-size: 1.7em;;}
+/********************** Main ************************/
+.main{height:100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; background: rgb(64,110,160); background: radial-gradient(circle, rgba(64,110,160,1) 0%, rgba(46,83,134,1) 100%); position:relative;}
+.main .navbar{position: absolute; top:0; left: 0; padding-left: 90px; padding-right: 90px; width: 100%;}
+.main .navbar-brand img{position: relative;}
+.main .nav-link{color: #fff; font-family: muli; position: relative; margin-left: 15px;}
+.nav-link::before{content: ""; position: absolute; left: 0; bottom: 0; right: 0; height: 1px; background-color: #ffffff; transition: all 0.5s ease; transform: scale(0);}
+.navbar .nav-item .nav-link.active::before, .navbar .nav-item .nav-link:hover::before{transform: scale(1);}
+
+.main img{position: absolute; object-fit: cover; width: 100%; bottom: 0;}
+.main img#montains{bottom:-100px; z-index: 1;}
+.main img#snow{z-index: 2;}
+.main img#skater{width: 500px; right: 150px; z-index: 3;}
+.main .main-title{left: 50%; position: absolute; top: 140px; transform: translateX(-50%); text-align: center; color: #fff; opacity: 0.50; font-family: catamaran-black; z-index: 0;}
+.main .main-title h2{font-size: 1.2em; letter-spacing: 5px;}
+.main .main-title h1{font-size: 8rem;}
+.main .main-text{max-width: 420px; left:100px; position: absolute; bottom: 160px; z-index: 5;}
+.main .main-text p{color: #fff; margin-bottom: 25px;}
+/********************** Offers ************************/
+.offer{margin-top: 100px;}
+.offer h1{font-family: catamaran-black; color: var(--title)}
+.offer p{color: var(--p); line-height: 27px; margin-top: 15px;}
+.offer .offer-wrapper{margin-top: 80px;}
+.offer .offer-wrapper .offer-item{padding: 15px;}
+.offer .offer-wrapper .offer-item h6{font-size: .8em; color: var(--p); margin-top: 20px;}
+.offer .offer-wrapper .offer-item h2{font-size: 1.2em; color: var(--p); font-family: catamaran-black; margin-bottom: 20px;}
+.offer .offer-wrapper .offer-item .btn-primary{width: 100px; height: 40px; font-size: .7em;}
+/********************** Photo Gallery ************************/
+.photo-gallery{margin-top: 100px; padding: 0;}
+.photo-gallery .row{width:100%; display: flex; flex-wrap: wrap; margin: 0; overflow: hidden;}
+.photo-gallery .row .column{flex: 33.3%; width: auto; height: 100%; overflow: hidden;}
+.photo-gallery .row .column img{width: 100%; height: 100%;}
+.photo-gallery .row .column .end{margin-bottom: -12px;}
+/********************** Our Team ************************/
+.team{margin-top: 100px;}
+.team h1{font-family: catamaran-black; color: var(--title); margin-bottom: 50px;}
+.team .team-item{padding: 20px; text-align: center;}
+.team .team-item h6{color: var(--p); line-height: 27px; margin-top: 15px;}
+.team .team-item h2{font-size: 1.7em; font-family: catamaran-black;}
+/********************** About ************************/
+.about{margin-top: 100px; background: url(../assets/about.jpg); background-size: cover;}
+.about .text{padding-top: 100px; padding-bottom: 100px; display: flex; flex-direction: column; justify-content: center;}
+.about .text h1{font-family: catamaran-black; margin-bottom: 15px;}
+.about .text p{margin-bottom: 10px;}
+.about .about-info-numbers{display: flex; margin-top: 30px;}
+.about .about-info-numbers .info{margin-right: 50px;}
+.about .about-info-numbers .info h2{color: var(--second-color); font-family: catamaran-black; margin: 0;}
+.about .about-info-numbers .info h6{color: var(--p); font-size: .8em;}
+/********************** Testimanials ************************/
+.testimonials{margin-top: 100px;}
+.testimonials .testimonial-item .qt{margin-top: 100px;}
+.testimonials .testimonial-item h6{font-family: catamaran-black; font-size: 1.5em; margin: 15px 0px; color: var(--title);}
+.testimonials .testimonial-item p{line-height: 1.7;}
+.testimonials .swiper-pagination{width: 90%; margin-top: 25px;}
+.testimonials .swiper-pagination span.swiper-pagination-bullet{padding: 6px; margin-right: 10px;}
+.testimonials .swiper-pagination span.swiper-pagination-bullet-active{background: var(--second-color);}
+/********************** Contact ************************/
+.contact{margin-top: 150px;}
+.contact .contact-box h1{font-family: catamaran-black; color: var(--title); margin-bottom: 30px;}
+.contact .contact-box p{margin-bottom: 15px;}
+.contact .contact-box p span{margin-left: 25px;}
+.contact .contact-box p i{color: var(--second-color); margin-right: 10px;}
+.contact .contact-box .social-links{margin-top: 20px;}
+.contact .contact-box .social-links i{margin-right: 20px; color: var(--p); cursor: pointer; font-size: 1.5em; transition: .3s;}
+.contact .contact-box .social-links i:hover{color: var(--second-color);}
+/********************** Footer ************************/
+.footer{height: 200px; display: flex; align-items:flex-end; justify-content: center; margin-top: 100px; background: url(../assets/montains.png); background-size: cover;}
+.footer .text{margin-bottom: 25px;}
+.footer .text p{color: #fff; font-family: muli; font-size: 1rem;}
+.footer .text p span{font-weight: bold;}
+.footer .text p a{font-weight: bold; color:#fff;}

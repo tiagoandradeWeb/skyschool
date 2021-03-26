@@ -1,0 +1,15 @@
+@media all and (max-width: 550px){
+    .main .navbar{padding-left: 0; padding-right: 0;}
+    .main .navbar-brand img{width: 100px; padding-left: 15px;}
+    .navbar-toggler-icon i{padding-right: 15px;}
+    .collapse{background: #2e5386; z-index: 1000;}
+    .main img#montains{bottom: 0px; height: 250px;}
+    .main img#snow{height: 150px;}
+    .main img#skater{width: 300px; right: 0px;}
+    .main .main-title{width:100%; margin-top: 10px;}
+    .main .main-title h2{font-size: .8em; letter-spacing:3px;}
+    .main .main-title h1{font-size: 5rem;}
+    .main .main-text{max-width: 100%; left:0px; top:160px; padding: 0px 15px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    .photo-gallery .row .column{flex: 1003%; width: 100%;}
+    .footer{height: 150px; margin-top: 50px;}
+}
