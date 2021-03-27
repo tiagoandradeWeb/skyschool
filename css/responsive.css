@@ -10,6 +10,6 @@
     .main .main-title h2{font-size: .8em; letter-spacing:3px;}
     .main .main-title h1{font-size: 5rem;}
     .main .main-text{max-width: 100%; left:0px; top:160px; padding: 0px 15px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-    .photo-gallery .row .column{flex: 1003%; width: 100%;}
+    .photo-gallery .row .column{flex: 100%; width: 100%;}
     .footer{height: 150px; margin-top: 50px;}
 }

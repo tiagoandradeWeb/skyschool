@@ -17,6 +17,7 @@
     --second-color: #ff690f;
 }
 /********************** general styles ************************/
+html{scroll-behavior: smooth;}
 p{color: var(--p); margin: 0; font-family: muliLight;}
 a{text-decoration: none!important;}
 .btn-primary{background: var(--second-color); color: #fff; height: 50px; width: 180px; display: flex; justify-content: center; align-items: center; text-align: center; text-transform: uppercase; font-family: muli; font-weight: 500; letter-spacing: 1px;  border-radius: 5px; font-size: .8em; transition: background .3s;}
@@ -73,6 +74,8 @@ a{text-decoration: none!important;}
 .about .about-info-numbers .info h6{color: var(--p); font-size: .8em;}
 /********************** Testimanials ************************/
 .testimonials{margin-top: 100px;}
+.testimonials h1{font-family: catamaran-black; color: var(--title); margin-bottom: 50px;}
+/* .testimonials .swiper-container .swiper-wrapper{width: 100%;} */
 .testimonials .testimonial-item .qt{margin-top: 100px;}
 .testimonials .testimonial-item h6{font-family: catamaran-black; font-size: 1.5em; margin: 15px 0px; color: var(--title);}
 .testimonials .testimonial-item p{line-height: 1.7;}
